@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecipesSelectionVC.swift
 //  GoodEatins
 //
 //  Created by Alaina Rogacki on 9/8/18.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecipesSelectionVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
