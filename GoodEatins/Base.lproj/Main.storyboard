@@ -145,13 +145,48 @@
                     <view key="view" contentMode="scaleToFill" id="Ebl-b8-3Mr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salad1" translatesAutoresizingMaskIntoConstraints="NO" id="HkM-Gf-mcd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="zgP-yT-eHe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqx-3A-lbK">
+                                <rect key="frame" x="118" y="323" width="139" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWY-zH-CjS">
+                                <rect key="frame" x="20" y="370" width="335" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HkM-Gf-mcd" firstAttribute="trailing" secondItem="OST-az-wIu" secondAttribute="trailing" id="71i-6S-4mb"/>
+                            <constraint firstItem="HkM-Gf-mcd" firstAttribute="top" secondItem="OST-az-wIu" secondAttribute="top" id="IHB-QN-xzP"/>
+                            <constraint firstItem="QWY-zH-CjS" firstAttribute="leading" secondItem="OST-az-wIu" secondAttribute="leading" constant="20" id="KOQ-1z-5Eb"/>
+                            <constraint firstItem="OST-az-wIu" firstAttribute="trailing" secondItem="QWY-zH-CjS" secondAttribute="trailing" constant="20" id="N2j-9E-jt7"/>
+                            <constraint firstItem="HkM-Gf-mcd" firstAttribute="leading" secondItem="OST-az-wIu" secondAttribute="leading" id="OvL-mM-oX7"/>
+                            <constraint firstItem="Bqx-3A-lbK" firstAttribute="top" secondItem="HkM-Gf-mcd" secondAttribute="bottom" constant="34" id="S7y-np-Vaa"/>
+                            <constraint firstItem="QWY-zH-CjS" firstAttribute="top" secondItem="Bqx-3A-lbK" secondAttribute="bottom" constant="18" id="hg2-Yr-B9d"/>
+                            <constraint firstItem="Bqx-3A-lbK" firstAttribute="centerX" secondItem="Ebl-b8-3Mr" secondAttribute="centerX" id="ij4-qs-Phk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OST-az-wIu"/>
                     </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="HkM-Gf-mcd" id="PRu-Kk-8W0"/>
+                        <outlet property="recipeInstructions" destination="QWY-zH-CjS" id="L8q-05-Klh"/>
+                        <outlet property="recipeTitle" destination="Bqx-3A-lbK" id="Kql-hc-KSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AY-hZ-xUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753" y="-573"/>
+            <point key="canvasLocation" x="1752.8" y="-573.46326836581716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hiy-h9-fle">
@@ -175,5 +210,6 @@
     <resources>
         <image name="burger0" width="1052" height="699"/>
         <image name="burger6" width="966" height="725"/>
+        <image name="salad1" width="1050" height="700"/>
     </resources>
 </document>
